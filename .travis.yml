@@ -8,4 +8,4 @@ install:
 script:
     - sudo mkdir build
     - cd build
-    - cmake ..
+    - sudo cmake ..
