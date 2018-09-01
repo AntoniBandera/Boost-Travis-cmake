@@ -23,7 +23,8 @@ install:
     - sudo ./b2 link=shared threading=multi variant=release
 
 script:
-    - sudo mkdir build
+    - cd ..
+    - mkdir build
     - cd build
     - cmake ..
     - make
