@@ -4,3 +4,8 @@ install:
     - cd boost_1_67_0/
     - sudo ./bootstrap.sh --with-libraries=filesystem,system
     - sudo ./b2 link=shared threading=multi variant=release
+
+script:
+    - mkdir build
+    - cd build
+    - cmake ..
